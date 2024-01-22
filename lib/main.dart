@@ -89,7 +89,7 @@ class _Frame3State extends State<Frame3> {
               // Days left
               Positioned(
                 left: 633,
-                top: 224,
+                top: 207,
                 child: Text(
                   '$days',
                   textAlign: TextAlign.center,
@@ -99,23 +99,37 @@ class _Frame3State extends State<Frame3> {
                     fontFamily: 'Outfit',
                     fontWeight: FontWeight.w700,
                     height: 0,
+                    shadows: <Shadow>[
+                      Shadow(
+                        color: Color.fromARGB(95, 88, 88, 100),
+                        blurRadius: 1,
+                        offset: Offset(0, 7), // changes position of shadow
+                      ),
+                    ],
                   ),
                 ),
               ),
 
               // Hours
               Positioned(
-                left: 536,
+                left: 537,
                 top: 711,
                 child: Text(
                   '${hours.toString().padLeft(2, '0')}',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0xFFFFB81D),
-                    fontSize: 197,
+                    fontSize: 196,
                     fontFamily: 'Outfit',
                     fontWeight: FontWeight.w700,
                     height: 0,
+                    shadows: <Shadow>[
+                      Shadow(
+                        color: Color.fromARGB(95, 88, 88, 100),
+                        blurRadius: 1,
+                        offset: Offset(0, 7), // changes position of shadow
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -133,14 +147,21 @@ class _Frame3State extends State<Frame3> {
                     fontFamily: 'Outfit',
                     fontWeight: FontWeight.w700,
                     height: 0,
+                    shadows: <Shadow>[
+                      Shadow(
+                        color: Color.fromARGB(95, 88, 88, 100),
+                        blurRadius: 1,
+                        offset: Offset(0, 7), // changes position of shadow
+                      ),
+                    ],
                   ),
                 ),
               ),
 
               // Seconds
               Positioned(
-                left: 1163,
-                top: 710,
+                left: 1147,
+                top: 711,
                 child: Text(
                   '${seconds.toString().padLeft(2, '0')}',
                   textAlign: TextAlign.center,
@@ -150,6 +171,13 @@ class _Frame3State extends State<Frame3> {
                     fontFamily: 'Outfit',
                     fontWeight: FontWeight.w700,
                     height: 0,
+                    shadows: <Shadow>[
+                      Shadow(
+                        color: Color.fromARGB(95, 88, 88, 100),
+                        blurRadius: 1,
+                        offset: Offset(0, 7), // changes position of shadow
+                      ),
+                    ],
                   ),
                 ),
               ),
