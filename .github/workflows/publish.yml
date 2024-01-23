@@ -28,7 +28,7 @@ jobs:
             
         - run: flutter pub get
           working-directory: ./project/
-        - run: flutter build web
+        - run: flutter build web --base-href="/Mapua-University-Centennial-Countdown-Timer-in-Flutter/"
           working-directory: ./project/
         
         - run: cp -r build/web/. ../gh-pages/
